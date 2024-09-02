@@ -93,12 +93,42 @@ obj = {
     "Price is the most important factor": 0,
     "Price is somewhat important, but I prefer eco-friendly products": 0.5,
     "Price does not matter if the product is truly eco-friendly": 1,
+
+
+    "18-24": 0,
+    "25-34": 1,
+    "35-44": 2,
+    "45-54": 3,
+    "55 and above": 4,
+
+    "Male": 0,
+    "Female": 1,
+    "Other": 2,
+    "Prefer not to say": 3,
+
+    "None at all": 0,
+    "A little": 0.25,
+    "A moderate amount": 0.5,
+    "A great deal": 0.75,
+    "A lot": 1,
+
+
+    "No responsibility": 0,
+    "A little responsibility": 0.3,
+    "Some responsibility": 0.6,
+    "A great deal of responsibility": 1,
+
+
+    "Never happens": 0,
+    "Rarely happens": 0.25,
+    "Sometimes happens": 0.5,
+    "Often happens": 0.75,
+    "Always happens": 1,
 }
 
 def convert_column_to_numberic_value(data):
     result = []
     for index, value in enumerate(data):
-        print(value, index)
         in_numeric = obj[value]
         result.append(in_numeric)
     return result
@@ -107,10 +137,20 @@ def convert_data_frame_to_numeric_value(data_frame):
     columns = data_frame.columns
     new_data_frame = pd.DataFrame()
     for index, column in enumerate(columns): 
-        print(column)
         new_data_frame.insert(index, column, convert_column_to_numberic_value(data[column]))
     return new_data_frame
     
+
+def find_mean_mod_median_standerd_deviation(row):
+    text = ""
+    data_frame = pd.DataFrame({'value': row})
+    mean = data_frame['value'].mean()
+    mode = data_frame['value'].mode()[0]
+    median = data_frame['value'].median()
+    std_dev = data_frame['value'].std()
+    text += f"Mean: {mean}, Mode: {mode}, Median: {median}, Std: {std_dev}"
+    return text
+
 
 if __name__ == '__main__':
     data = convert_csv_to_data_frame(filePath='data.xlsx')
@@ -203,6 +243,61 @@ if __name__ == '__main__':
     hypothesis_six_data_frame_numeric = convert_data_frame_to_numeric_value(hypothesis_six_data_frame)
     hypothesis_six_data_frame_numeric.to_csv(f'{hypothesis_name}_numeric.csv', index=False)
     print(hypothesis_six_data_frame_numeric.corr('pearson').to_csv(f'{hypothesis_name}_corr.csv', index=False))
+
+
+    print("----------------------------------------  MEAN MODE MEDIAN  ---------------------------------------------------------------")
+    print("AGE, Qualification, Male, Female ratio,  mean mode media stander deviation")
+
+    columns_to_review = [
+        "What is your age?",
+        "What is your gender?",
+        "What is your highest level of education? - Selected Choice",
+        # "What is your highest level of education? - Other (Please specify): _ - Text",
+        "What is your household average monthy income",
+        "How often do you purchase Fast-Moving Consumer Goods (FMCG) such as food, beverages, household items, or personal care products?",
+        "How familiar are you with environmental or green claims on FMCG products (e.g., eco-friendly, natural, sustainable)?",
+        "I understand the information presented on FMCG product labels and am satisfied with the clarity of these claims.",
+        "How often do you read FMCG product labels to check for environmental claims (e.g., recyclable, sustainable, biodegradable)?",
+        "How clear and visible do you find environmental claims on FMCG product packaging?",
+        # "What specific environmental claims do you usually look for on FMCG product labels? (Select all that apply) - Selected Choice",
+        # "What specific environmental claims do you usually look for on FMCG product labels? (Select all that apply) - Other (Please specify): - Text",
+        "Have you ever seen an FMCG product that made environmental claims on its label that you found to be exaggerated or false?",
+        "How confident are you in identifying misleading or false environmental claims on FMCG product labels?",
+        "How much does the presence of environmental claims on FMCG products influence your purchasing decisions?",
+        "If you find that a brand’s environmental claims are misleading, how likely are you to stop purchasing their products?",
+        "To what extent do misleading environmental claims affect your trust in a brand?",
+        "How much responsibility do you feel consumers have to verify the environmental claims made by FMCG brands?",
+        "Do you think FMCG brands intentionally use vague or misleading labels to make their products seem more environmentally friendly?",
+        "In your opinion, how common is greenwashing in the FMCG industry?",
+        'How often do you read the ingredients list on FMCG product labels to verify the accuracy of environmental claims (e.g., "natural," "chemical-free")?',
+        'Do you feel that FMCG brands provide sufficient transparency about the sourcing and processing of ingredients, particularly in products claiming to be "green" or "eco-friendly"?',
+        "Do you think FMCG brands use complex or scientific terminology in the ingredients list to obscure the presence of potentially harmful chemicals or additives?",
+        "Would you prefer if FMCG brands provided more detailed information about their ingredients and the environmental impact of their products?",
+        "How often do you buy instant or fast-cooking FMCG food products (e.g., instant noodles, ready-to-eat meals)?",
+        "Do you prefer fast-cooking meals over traditional cooking due to convenience?",
+        'Are you aware that consuming instant or fast-cooking meals may have potential health risks despite being marketed as "natural" or "healthy"?',
+        'If you are aware of the potential health risks of instant cooking items, do you still choose them due to convenience?',
+        'How likely are you to continue purchasing instant cooking products even if their environmental claims are misleading or unclear?',
+        'To what extent does price influence your decision to purchase an FMCG product that makes environmental claims?',
+        'If an FMCG product contains misleading environmental claims but is priced significantly lower than a truly eco-friendly product, which would you choose?',
+        'Do you believe that misleading environmental claims should be more strictly regulated by the government?',
+        'Would you be willing to pay more for an FMCG product with verified and transparent environmental claims, even if the price is higher than misleading products?',
+    ]
+
+    data_under_review = data[columns_to_review]
+    columns = data_under_review.columns
+    text = ""
+    for index, column in enumerate(columns):
+        text += "\n----------------------------------------------------------------------------------------"
+        text += f"\nColumn: {column}\n"
+        numeric_data = convert_column_to_numberic_value(data_under_review[column])
+        text += find_mean_mod_median_standerd_deviation(numeric_data)
+    # all_numeric_value = convert_data_frame_to_numeric_value(data_under_review)
+
+    print(text)
+    with open("mean-media-mod.txt", "w") as file:
+        file.write(text)
+
 
 
 

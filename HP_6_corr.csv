@@ -1,5 +1,5 @@
 "How often do you purchase Fast-Moving Consumer Goods (FMCG) such as food, beverages, household items, or personal care products?",How much does the presence of environmental claims on FMCG products influence your purchasing decisions?,"If an FMCG product contains misleading environmental claims but is priced significantly lower than a truly eco-friendly product, which would you choose?",To what extent does price influence your decision to purchase an FMCG product that makes environmental claims?
-1.0,0.10853868035339419,-0.09701196807065622,0.06091381683810874
-0.10853868035339419,1.0,0.3033717738822443,0.4142883059299315
--0.09701196807065622,0.3033717738822443,1.0,0.37859728085554867
-0.06091381683810874,0.4142883059299315,0.37859728085554867,1.0
+1.0,0.10725280262181545,-0.09701196807065622,0.06091381683810874
+0.10725280262181545,1.0,0.35494573487298603,0.393078549176622
+-0.09701196807065622,0.35494573487298603,1.0,0.37859728085554867
+0.06091381683810874,0.393078549176622,0.37859728085554867,1.0

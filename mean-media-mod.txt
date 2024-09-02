@@ -1,0 +1,91 @@
+
+----------------------------------------------------------------------------------------
+Column: What is your age?
+Mean: 0.8811881188118812, Mode: 1, Median: 1.0, Std: 0.8606996466321306
+----------------------------------------------------------------------------------------
+Column: What is your gender?
+Mean: 0.44884488448844884, Mode: 0, Median: 0.0, Std: 0.4981990602902378
+----------------------------------------------------------------------------------------
+Column: What is your highest level of education? - Selected Choice
+Mean: 0.6838283828382838, Mode: 0.8, Median: 0.8, Std: 0.21889819729991147
+----------------------------------------------------------------------------------------
+Column: What is your household average monthy income
+Mean: 0.4315181518151815, Mode: 0.0, Median: 0.5, Std: 0.3617310371152397
+----------------------------------------------------------------------------------------
+Column: How often do you purchase Fast-Moving Consumer Goods (FMCG) such as food, beverages, household items, or personal care products?
+Mean: 0.42326732673267325, Mode: 0.0, Median: 0.5, Std: 0.3423886938900833
+----------------------------------------------------------------------------------------
+Column: How familiar are you with environmental or green claims on FMCG products (e.g., eco-friendly, natural, sustainable)?
+Mean: 0.485973597359736, Mode: 0.5, Median: 0.5, Std: 0.3004019811751743
+----------------------------------------------------------------------------------------
+Column: I understand the information presented on FMCG product labels and am satisfied with the clarity of these claims.
+Mean: 0.5338283828382838, Mode: 0.75, Median: 0.5, Std: 0.2343849148960313
+----------------------------------------------------------------------------------------
+Column: How often do you read FMCG product labels to check for environmental claims (e.g., recyclable, sustainable, biodegradable)?
+Mean: 0.47260726072607256, Mode: 0.4, Median: 0.4, Std: 0.25529258804364297
+----------------------------------------------------------------------------------------
+Column: How clear and visible do you find environmental claims on FMCG product packaging?
+Mean: 0.45544554455445546, Mode: 0.25, Median: 0.5, Std: 0.27685864882419475
+----------------------------------------------------------------------------------------
+Column: Have you ever seen an FMCG product that made environmental claims on its label that you found to be exaggerated or false?
+Mean: 0.6138613861386139, Mode: 0.5, Median: 0.5, Std: 0.36765672055095655
+----------------------------------------------------------------------------------------
+Column: How confident are you in identifying misleading or false environmental claims on FMCG product labels?
+Mean: 0.3292079207920792, Mode: 0.25, Median: 0.25, Std: 0.21986607830082483
+----------------------------------------------------------------------------------------
+Column: How much does the presence of environmental claims on FMCG products influence your purchasing decisions?
+Mean: 0.48432343234323433, Mode: 0.5, Median: 0.5, Std: 0.2883673860716038
+----------------------------------------------------------------------------------------
+Column: If you find that a brand’s environmental claims are misleading, how likely are you to stop purchasing their products?
+Mean: 0.6270627062706271, Mode: 0.75, Median: 0.75, Std: 0.2728503326036517
+----------------------------------------------------------------------------------------
+Column: To what extent do misleading environmental claims affect your trust in a brand?
+Mean: 0.6328382838283828, Mode: 0.75, Median: 0.75, Std: 0.268924514113319
+----------------------------------------------------------------------------------------
+Column: How much responsibility do you feel consumers have to verify the environmental claims made by FMCG brands?
+Mean: 0.6726072607260726, Mode: 0.6, Median: 0.6, Std: 0.27550459584408615
+----------------------------------------------------------------------------------------
+Column: Do you think FMCG brands intentionally use vague or misleading labels to make their products seem more environmentally friendly?
+Mean: 0.7863036303630363, Mode: 1.0, Median: 0.75, Std: 0.24226893863877996
+----------------------------------------------------------------------------------------
+Column: In your opinion, how common is greenwashing in the FMCG industry?
+Mean: 0.6806930693069307, Mode: 0.75, Median: 0.75, Std: 0.2146887046835344
+----------------------------------------------------------------------------------------
+Column: How often do you read the ingredients list on FMCG product labels to verify the accuracy of environmental claims (e.g., "natural," "chemical-free")?
+Mean: 0.5326732673267328, Mode: 0.4, Median: 0.4, Std: 0.27371938217276026
+----------------------------------------------------------------------------------------
+Column: Do you feel that FMCG brands provide sufficient transparency about the sourcing and processing of ingredients, particularly in products claiming to be "green" or "eco-friendly"?
+Mean: 0.41914191419141916, Mode: 0.25, Median: 0.25, Std: 0.26145274792268625
+----------------------------------------------------------------------------------------
+Column: Do you think FMCG brands use complex or scientific terminology in the ingredients list to obscure the presence of potentially harmful chemicals or additives?
+Mean: 0.768976897689769, Mode: 0.75, Median: 0.75, Std: 0.23953862135393766
+----------------------------------------------------------------------------------------
+Column: Would you prefer if FMCG brands provided more detailed information about their ingredients and the environmental impact of their products?
+Mean: 0.8184818481848185, Mode: 1.0, Median: 1.0, Std: 0.24254788323710036
+----------------------------------------------------------------------------------------
+Column: How often do you buy instant or fast-cooking FMCG food products (e.g., instant noodles, ready-to-eat meals)?
+Mean: 0.5056105610561057, Mode: 0.4, Median: 0.4, Std: 0.2467031761178559
+----------------------------------------------------------------------------------------
+Column: Do you prefer fast-cooking meals over traditional cooking due to convenience?
+Mean: 0.4158415841584158, Mode: 0.0, Median: 0.5, Std: 0.3285728743547169
+----------------------------------------------------------------------------------------
+Column: Are you aware that consuming instant or fast-cooking meals may have potential health risks despite being marketed as "natural" or "healthy"?
+Mean: 0.9207920792079208, Mode: 1, Median: 1.0, Std: 0.2705097585549866
+----------------------------------------------------------------------------------------
+Column: If you are aware of the potential health risks of instant cooking items, do you still choose them due to convenience?
+Mean: 0.5808580858085809, Mode: 1, Median: 1.0, Std: 0.49423489903366175
+----------------------------------------------------------------------------------------
+Column: How likely are you to continue purchasing instant cooking products even if their environmental claims are misleading or unclear?
+Mean: 0.40594059405940597, Mode: 0.25, Median: 0.25, Std: 0.28084137382862695
+----------------------------------------------------------------------------------------
+Column: To what extent does price influence your decision to purchase an FMCG product that makes environmental claims?
+Mean: 0.43564356435643564, Mode: 0.5, Median: 0.5, Std: 0.3379674810219363
+----------------------------------------------------------------------------------------
+Column: If an FMCG product contains misleading environmental claims but is priced significantly lower than a truly eco-friendly product, which would you choose?
+Mean: 0.523102310231023, Mode: 0.5, Median: 0.5, Std: 0.270444102684389
+----------------------------------------------------------------------------------------
+Column: Do you believe that misleading environmental claims should be more strictly regulated by the government?
+Mean: 0.8448844884488449, Mode: 1.0, Median: 1.0, Std: 0.2665674060667172
+----------------------------------------------------------------------------------------
+Column: Would you be willing to pay more for an FMCG product with verified and transparent environmental claims, even if the price is higher than misleading products?
+Mean: 0.6410891089108911, Mode: 0.75, Median: 0.75, Std: 0.2769030515908576

@@ -1,0 +1,5 @@
+I understand the information presented on FMCG product labels and am satisfied with the clarity of these claims.,"How often do you read FMCG product labels to check for environmental claims (e.g., recyclable, sustainable, biodegradable)?",Have you ever seen an FMCG product that made environmental claims on its label that you found to be exaggerated or false?,How confident are you in identifying misleading or false environmental claims on FMCG product labels?
+1.0,0.1386651629072604,0.10405353715026792,0.07634226525570989
+0.1386651629072604,1.0,0.07038271548943097,0.1626673705959373
+0.10405353715026792,0.07038271548943097,1.0,0.0519135721840099
+0.07634226525570989,0.1626673705959373,0.0519135721840099,1.0

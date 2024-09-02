@@ -1,0 +1,6 @@
+What is your highest level of education? - Selected Choice,What is your household average monthy income,How confident are you in identifying misleading or false environmental claims on FMCG product labels?,"How often do you read the ingredients list on FMCG product labels to verify the accuracy of environmental claims (e.g., ""natural,"" ""chemical-free"")?","Do you feel that FMCG brands provide sufficient transparency about the sourcing and processing of ingredients, particularly in products claiming to be ""green"" or ""eco-friendly""?"
+1.0,0.28392196079262555,-0.09713836597943902,-0.0160211991743153,-0.07788767465442539
+0.28392196079262555,1.0,-0.00963561189743132,-0.03334339591609735,-0.0478017551177427
+-0.09713836597943902,-0.00963561189743132,1.0,-0.037643149239192375,-0.03222320173916246
+-0.0160211991743153,-0.03334339591609735,-0.037643149239192375,1.0,-0.030052233936049458
+-0.07788767465442539,-0.0478017551177427,-0.03222320173916246,-0.030052233936049458,1.0

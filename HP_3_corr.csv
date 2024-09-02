@@ -1,0 +1,5 @@
+Have you ever seen an FMCG product that made environmental claims on its label that you found to be exaggerated or false?,"If you find that a brand’s environmental claims are misleading, how likely are you to stop purchasing their products?",To what extent do misleading environmental claims affect your trust in a brand?,How likely are you to continue purchasing instant cooking products even if their environmental claims are misleading or unclear?
+1.0,0.04510075094477865,0.08513521436137302,-0.048262706552665666
+0.04510075094477865,1.0,0.3332969757987529,-0.1297973710425043
+0.08513521436137302,0.3332969757987529,1.0,-0.09433327446825814
+-0.048262706552665666,-0.1297973710425043,-0.09433327446825814,1.0
